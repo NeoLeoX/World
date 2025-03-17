@@ -12,7 +12,7 @@ install_global_command() {
     echo -e "${CYAN}正在安装全局命令...${RESET}"
 
     # 下载脚本到 /usr/local/bin
-    curl -L -s menu.jinqians.com -o "/usr/local/bin/menu.sh"
+    curl -L -s https://raw.githubusercontent.com/NeoLeoX/World/refs/heads/main/Menu.sh -o "/usr/local/bin/menu.sh"
     chmod +x "/usr/local/bin/menu.sh"
 
     # 创建软链接
@@ -220,17 +220,17 @@ check_and_show_status() {
 
 # 安装/管理 Snell
 manage_snell() {
-    bash <(curl -sL https://raw.githubusercontent.com/jinqians/snell.sh/main/snell.sh)
+    bash <(curl -sL https://raw.githubusercontent.com/NeoLeoX/World/refs/heads/main/Snell.sh)
 }
 
 # 安装/管理 SS-2022
 manage_ss_rust() {
-    bash <(curl -sL https://raw.githubusercontent.com/jinqians/ss-2022.sh/main/ss-2022.sh)
+    bash <(curl -sL https://raw.githubusercontent.com/NeoLeoX/World/refs/heads/main/ss-2022.sh)
 }
 
 # 安装/管理 ShadowTLS
 manage_shadowtls() {
-    bash <(curl -sL https://raw.githubusercontent.com/jinqians/snell.sh/main/shadowtls.sh)
+    bash <(curl -sL https://raw.githubusercontent.com/NeoLeoX/World/refs/heads/main/ShadowTLS.sh)
 }
 
 # 卸载 Snell
